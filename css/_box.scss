@@ -1,11 +1,9 @@
 .box {
   background-color: $white;
   border-radius: 1em;
-  margin: $spacing * 3 $spacing * 1.5;
+  margin: 0 $spacing * 1.5;
   box-shadow: 0 8px 8px 8px $shadow;
 
-  position: relative;
-  top: -12.5em;
 
   .box__top {
     padding: $spacing;
@@ -47,13 +45,13 @@
       align-items: center;
       justify-content: center;
       gap: $spacing;
-      padding-top: $spacing * 3;
-      padding-bottom: $spacing * 4;
+      padding-top: $spacing * 2;
+      padding-bottom: $spacing;
 
       .price__text {
         color: $dark-blue;
         font-weight: 800;
-        font-size: $font-size * 3;
+        font-size: $font-size * 2.5;
       }
     }
 
@@ -61,6 +59,8 @@
       display: flex;
       justify-content: flex-end;
       gap: $spacing;
+      padding-top: $spacing;
+      padding-bottom: $spacing;
 
       .billing__toggle {
         @include btn-toggle;

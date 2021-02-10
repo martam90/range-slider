@@ -2,12 +2,14 @@
   .wrapper {
     width: 100%;
 
-    .box {
-      max-width: 50em;
-      margin: 0 auto;
+      .content__text {
+        display: flex;
+        flex-direction: row;
+      }
 
-      position: relative;
-      top: -15em;
+    .box {
+      max-width: 40em;
+      margin: 0 auto;
 
       .box__top {
         display: grid;
@@ -44,6 +46,7 @@
       .box__bottom {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: $spacing;
 
         .cta {
           place-self: center;

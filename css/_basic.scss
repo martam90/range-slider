@@ -13,16 +13,23 @@ body {
   padding: 0;
   font-family: $font-family;
   font-size: $font-size;
+
+  background-color: hsl(230, 100%, 99%);
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 350px;
 }
 
 h1 {
   margin: 0;
   color: $dark-blue;
+  text-align: center;
 }
 
 p {
   color: $blue;
   margin: 0;
   line-height: 1.8;
-  font-size: $font-size + 0.3;
+  font-size: $font-size + 0.2;
 }
