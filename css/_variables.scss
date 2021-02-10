@@ -1,0 +1,83 @@
+$font-family: "Manrope", sans-serif;
+$font-size: 0.9rem;
+$spacing: 1.25em;
+
+$soft-cyan: hsl(174, 77%, 80%); /*(Full Slider Bar) */
+$strong-cyan: hsl(174, 86%, 45%); /* (Slider Backround)*/
+$grayish-red: hsl(14, 92%, 95%); /* Discount Background) */
+$light-red: hsl(15, 100%, 70%); /*(Discount Text)  */
+$pale-blue: hsl(226, 100%, 87%); /* (CTA Text) */
+
+$white: hsl(0, 0%, 100%); /*(Pricing Component Background) */
+$veryp-blue: #fafbff; /* (Main Background) */
+$grayish-blue: hsl(224, 65%, 95%); /* (Empty Slider Bar) */
+$light-blue: hsl(223, 50%, 87%); /* (Toggle Background) */
+$blue: hsl(225, 20%, 60%); /* Text*/
+$dark-blue: hsl(227, 35%, 25%); /* (Text & CTA Background)*/
+$cyan-shadow: #c0f5ef;
+
+$line: #efeff9;
+$cyan-hover: #78eadc;
+$shadow: #eff0f5;
+
+@mixin cta {
+  display: block;
+  width: 18.75em;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+
+  border-radius: 1.8em;
+  background-color: $dark-blue;
+  color: $pale-blue;
+  padding: $spacing 0;
+  transition: all ease-out 300ms;
+
+  &:hover {
+    color: $white;
+    transition: all ease-out 300ms;
+  }
+
+  &:focus {
+    outline: 2px dotted $dark-blue;
+  }
+}
+
+@mixin btn-toggle {
+  display: block;
+  width: 5em;
+  height: 2.5em;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 1.8em;
+  background-color: $light-blue;
+
+  padding: 0;
+  transition: all ease-out 300ms;
+
+  &:hover {
+    background-color: $soft-cyan;
+    transition: all ease-out 300ms;
+  }
+}
+
+@mixin thumb {
+  appearance: none;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: $strong-cyan;
+  cursor: pointer;
+  background-image: url("../images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.5em;
+  box-shadow: 0 8px 8px 8px $cyan-shadow;
+  transition: all ease-in-out 300ms;
+
+  &:hover {
+    background-color: $cyan-hover;
+    transition: all ease-in-out 300ms;
+  }
+}

@@ -1,0 +1,54 @@
+@media screen and (min-width: 650px) {
+  .wrapper {
+    width: 100%;
+
+    .box {
+      max-width: 50em;
+      margin: 0 auto;
+
+      position: relative;
+      top: -15em;
+
+      .box__top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 7.5em auto;
+
+        .price {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          padding: $spacing * 3 0;
+        }
+
+        .text__uppercase {
+          place-self: center;
+          padding-bottom: 0;
+        }
+
+        .billing,
+        .range {
+          grid-column: 1 / 3;
+
+          .billing__pill {
+            .billing__round--desktop {
+              display: block;
+            }
+
+            .billing__round {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .box__bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .cta {
+          place-self: center;
+        }
+      }
+    }
+  }
+}
