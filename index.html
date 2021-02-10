@@ -40,6 +40,7 @@
               value="2"
               class="range__slider"
               id="slider"
+              aria-label="Slider"
             />
           </div>
 
@@ -50,7 +51,7 @@
 
           <div class="billing">
             <p>Monthly Billing</p>
-            <button class="billing__toggle"></button>
+            <button class="billing__toggle" aria-label="Switch"></button>
             <p>Yearly Billing</p>
 
             <div class="billing__pill">
@@ -61,7 +62,7 @@
         </div>
 
         <div class="box__bottom">
-          <ul class="box__icons">
+          <div class="box__icons">
             <div class="box__icon">
               <svg viewbox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -71,7 +72,7 @@
                   d="M1 4.134l1.907 1.908L7.949 1"
                 />
               </svg>
-              <li>Unlimited websites</li>
+              <p>Unlimited websites</p>
             </div>
             <div class="box__icon">
               <svg viewbox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +83,7 @@
                   d="M1 4.134l1.907 1.908L7.949 1"
                 />
               </svg>
-              <li>100% data ownership</li>
+              <p>100% data ownership</p>
             </div>
             <div class="box__icon">
               <svg viewbox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
@@ -93,9 +94,9 @@
                   d="M1 4.134l1.907 1.908L7.949 1"
                 />
               </svg>
-              <li>Email reports</li>
+              <p>Email reports</p>
             </div>
-          </ul>
+          </div>
           <button class="cta">Start my trial</button>
         </div>
       </div>
