@@ -18,18 +18,19 @@ body {
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 100% 350px;
+  background-size: 100% 32em;
 }
 
 h1 {
   margin: 0;
   color: $dark-blue;
   text-align: center;
+  padding-bottom: $spacing - 0.9;
 }
 
 p {
   color: $blue;
   margin: 0;
   line-height: 1.8;
-  font-size: $font-size + 0.2;
+  font-size: $font-size;
 }

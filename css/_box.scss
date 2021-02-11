@@ -3,19 +3,18 @@
   border-radius: 1em;
   margin: 0 $spacing * 1.5;
   box-shadow: 0 8px 8px 8px $shadow;
-
+  padding: $spacing * 1.5 $spacing * 1;
 
   .box__top {
-    padding: $spacing;
     margin: 0;
     border-radius: 1em 1em 0 0;
 
     .text__uppercase {
       text-transform: uppercase;
       font-weight: 800;
-      letter-spacing: 0.2em;
-      padding-bottom: $spacing * 2.5;
+      letter-spacing: 0.1em;
       text-align: center;
+      padding-bottom: $spacing;
     }
 
     .range {
@@ -24,7 +23,7 @@
       .range__slider {
         appearance: none;
         width: 100%;
-        height: 1em;
+        height: 0.5em;
         border-radius: 1em;
         outline: none;
         background-color: $grayish-blue;
@@ -45,8 +44,7 @@
       align-items: center;
       justify-content: center;
       gap: $spacing;
-      padding-top: $spacing * 2;
-      padding-bottom: $spacing;
+      padding: $spacing 0;
 
       .price__text {
         color: $dark-blue;
@@ -58,9 +56,9 @@
     .billing {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       gap: $spacing;
-      padding-top: $spacing;
-      padding-bottom: $spacing;
+      padding: $spacing 0;
 
       .billing__toggle {
         @include btn-toggle;
@@ -69,54 +67,44 @@
         &::after {
           content: "";
           position: absolute;
-          top: 0.35em;
-          left: 0.35em;
+          top: 0.28em;
+          left: 0.2em;
           background-color: $white;
           border-radius: 50%;
-          width: 1.8em;
-          height: 1.8em;
+          width: 1em;
+          height: 1em;
         }
 
         &.active {
           &::after {
             left: auto;
-            right: 0.35em;
+            right: 0.2em;
           }
         }
       }
 
       .billing__pill {
         display: flex;
+        align-items: center;
 
         .billing__round {
-          background-color: $grayish-red;
-          color: $light-red;
-          font-weight: 800;
-          border-radius: 1em;
-          width: 4em;
-          height: 1.8em;
-          text-align: center;
+          @include billing-round;
         }
 
         .billing__round--desktop {
           display: none;
-          background-color: $grayish-red;
-          color: $light-red;
-          font-weight: 800;
-          font-size: $font-size;
-          border-radius: 1em;
-          width: 100%;
-          padding: $spacing - 0.9;
         }
+
+        
       }
     }
   }
 
   .box__bottom {
-    padding: $spacing * 2;
     margin: 0;
-    border-top: 2px solid $line;
+    border-top: 1px solid $line;
     border-radius: 0 0 1em 1em;
+    padding: $spacing;
 
     display: flex;
     flex-direction: column;
@@ -126,11 +114,11 @@
       display: flex;
       align-items: center;
       gap: $spacing;
-      padding-bottom: $spacing;
+      padding-bottom: $spacing - 0.8;
 
       & > svg {
-        width: 1.2em;
-        height: 1.2em;
+        width: 0.8em;
+        height: 0.8em;
       }
     }
 

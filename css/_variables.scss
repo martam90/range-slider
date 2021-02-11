@@ -22,15 +22,17 @@ $shadow: #eff0f5;
 
 @mixin cta {
   display: block;
-  width: 18.75em;
+  width: 15em;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-size: $font-size - 0.2;
 
   border-radius: 1.8em;
   background-color: $dark-blue;
   color: $pale-blue;
-  padding: $spacing 0;
+  padding: $spacing;
+  font-size: $font-size - 0.2;
   transition: all ease-out 300ms;
 
   &:hover {
@@ -45,8 +47,8 @@ $shadow: #eff0f5;
 
 @mixin btn-toggle {
   display: block;
-  width: 5em;
-  height: 2.5em;
+  width: 3em;
+  height: 1.5em;
   border: none;
   cursor: pointer;
 
@@ -64,15 +66,15 @@ $shadow: #eff0f5;
 
 @mixin thumb {
   appearance: none;
-  width: 5em;
-  height: 5em;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   background-color: $strong-cyan;
   cursor: pointer;
   background-image: url("../images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2.5em;
+  background-size: 1.5em;
   box-shadow: 0 8px 8px 8px $cyan-shadow;
   transition: all ease-in-out 300ms;
 
@@ -80,4 +82,16 @@ $shadow: #eff0f5;
     background-color: $cyan-hover;
     transition: all ease-in-out 300ms;
   }
+}
+
+
+@mixin billing-round {
+  background-color: $grayish-red;
+  color: $light-red;
+  font-weight: 800;
+  font-size: $font-size - 0.3;
+  border-radius: 1em;
+  width: 100%;
+  padding: 0 $spacing - 0.9;
+  text-align: center;
 }
